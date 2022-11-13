@@ -1,13 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import Header from '../components/header'
 import GlobalStyle from "../components/GlobalStyles/GlobalStyles"
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <>
       <Layout>
@@ -19,7 +17,6 @@ export default ({ data }) => {
             <div key={node.id}>
               <Link
                 to={node.fields.slug}
-                style={{ textDecoration: `none` }}
               >
                 <h3>{node.frontmatter.title}{" "}<span> - {node.frontmatter.date} </span></h3>
                 <p>{node.excerpt}</p>
