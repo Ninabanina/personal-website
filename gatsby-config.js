@@ -19,5 +19,15 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Lato\:400,700`,
+          `Poppins\:400,400i`
+        ],
+        display: 'swap'
+      }
+    },
   ]
 }

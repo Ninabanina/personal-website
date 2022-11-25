@@ -41,6 +41,7 @@ const NavItem = styled.li`
     text-decoration: none;
     color: #444658;
     text-transform: uppercase;
+    font-weight: 400;
 
     background-image: linear-gradient(
 		#c3aeca 100%,
