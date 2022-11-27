@@ -169,6 +169,11 @@ const GlobalStyle = createGlobalStyle`
   --md: 992px;
   --lg: 1200px;
   --xlg: 1440px; */
+  body {
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.text};
+    transition: background 0.2s linear, color 0.2s linear;
+  }
 
 `;
 

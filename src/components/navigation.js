@@ -39,7 +39,7 @@ const NavItem = styled.li`
   a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-    color: #444658;
+    color: ${({ theme }) => theme.colors.link};
     text-transform: uppercase;
     font-weight: 400;
 
