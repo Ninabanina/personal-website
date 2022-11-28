@@ -13,6 +13,7 @@ export const light = {
   togglerBorderRadius: '0.5px',
   togglerItemBg: '#404346',
   togglerItemFg: '#ffffff',
+  toggleHover: '#2d2f31',
 }
 
 export const dark = {
@@ -21,13 +22,14 @@ export const dark = {
   link: '#ffffff',
 
   // Theme Toggler Style
-  togglerBg: '#fcfefe',
+  togglerBg: '#dce0e3',
   togglerLeftSpace: '4px',
-  togglerTopSpace: '-2px',
-  togglerRightSpace: '2px',
-  togglerWidth: '32px',
-  togglerHeight: '32px',
+  togglerTopSpace: '2px',
+  togglerRightSpace: '6px',
+  togglerWidth: '29px',
+  togglerHeight: '24px',
   togglerBorderRadius: '16px',
-  togglerItemBg: '#fcfefe',
+  togglerItemBg: '#dce0e3',
   togglerItemFg: '#404346',
+  toggleHover: '#fcfefe',
 }

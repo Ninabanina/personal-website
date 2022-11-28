@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ThemeToggler = ({ toggleTheme }) => {
+const ThemeToggler = ({ theme, toggleTheme }) => {
+  const areaLabel = theme === 'light' ? 'Activate dark mode' : 'Activate light mode';
+
   return (
-    <Toggler onClick={toggleTheme}></Toggler>
+    <Toggler onClick={toggleTheme} aria-label={areaLabel} title={areaLabel}>
+      <HidenText>
+       Dark and Light Mode toggle.
+      </HidenText>
+    </Toggler>
   )
 }
 
@@ -13,7 +19,7 @@ const Toggler = styled.button`
   width: 48px;
   height: 28px;
   border: none;
-  outline: none;
+  /* outline: none; */
   overflow: hidden;
   position: relative;
   border-radius: 14px;
@@ -47,11 +53,25 @@ const Toggler = styled.button`
     transition: all 0.2s ease-in-out;
   }
 
-  &:hover,
-  &:focus {
-    background: ${({ theme }) => theme.colors.togglerHover};
-  }
+  &:hover {
+    background: ${({ theme }) => theme.colors.toggleHover};
 
+    &::after {
+      background: ${({ theme }) => theme.colors.toggleHover};
+    }
+  }
+`
+
+const HidenText = styled.span`
+  border: 0 !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
 `
 
 export default ThemeToggler;
