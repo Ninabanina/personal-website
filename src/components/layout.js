@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Navigation from "./navigation"
 import styled from "styled-components"
+import breakpoints from "./GlobalStyles/breakpoints"
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -25,26 +26,21 @@ export default ({ children }) => {
 }
 
 const Contianer = styled.main`
-  width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  width: 128rem;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 4rem;
 
-  @media (min-width: 576px) {
-    width: 54rem;
+
+  @media ${breakpoints.device.maxXS} {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
-  @media (min-width: 992px) {
-    width: 72rem;
-  }
-
-  @media (min-width: 992px) {
-    width: 96rem;
-  }
-
-  @media (min-width: 1200px) {
-    width: 114rem;
+  @media ${breakpoints.device.maxMD} {
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 `
 

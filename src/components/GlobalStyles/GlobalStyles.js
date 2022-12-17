@@ -1,6 +1,82 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+
+    /* Colors */
+    --theme-color--purple: #C3AFC9;
+    --theme-color--rose: #F8DBDB;
+    --theme-color--blue: #B3D9EE;
+    --theme-color--wheat: #FAF0D7;
+    --theme-color--peach: #FFD9C0;
+
+    --theme-color--charcoal: #454657;
+    --theme-color--black: #121419;
+    --theme-color--white: #F6F6F6;
+
+    --theme-color--light-grey-100: #fcfefe;
+    --theme-color--light-grey-200: #D9D9D9;
+    --theme-color--grey: #5B5E62;
+    --theme-color--dark-grey-100: #656565;
+    --theme-color--dark-grey-200: #2d2f31;
+
+    /* Font families and stacks */
+    --font-body: Poppins;
+    --font-heading: Lato;
+    --font-stack-body: var(--font-body), sans-serif;
+    --font-stack-heading: var( --font-heading), sans-serif;
+
+    /* Typography sizing */
+    --h1-sm: 4.0rem;
+    --h1-lg: 7.5rem;
+
+    --h2-sm: 2.6rem;
+    --h2-lg: 5.7rem;
+
+    --h3-sm: 2.4rem;
+    --h3-lg: 4.2rem;
+
+    --h4-sm: 2.2rem;
+    --h4-lg: 3.21rem;
+
+    --h5-sm: 1.8rem;
+    --h5-lg: 2.6rem;
+
+    --h6-sm: 1.6rem;
+    --h6-lg: 1.8rem;
+
+    --font-size-body:1.8rem;
+
+    /* Typography spacing */
+    --letter-spacing-body: 0.05rem;
+    --letter-spacing-sm: -0.05rem;
+    --letter-spacing-md: 0.3rem;
+    
+    --line-height-h1: 1.15em;
+    --line-height-h2: 1.15em;
+    --line-height-h3: 1.3em;
+    --line-height-h4: 1.3em;
+    --line-height-h5: 1.3em;
+    --line-height-h6: 1.4em;
+
+    /* Transition defaults */
+    --transition-duration: 0.2s;
+    --transition-easing: ease-out;
+    --transition-delay: 0s;
+
+    --bg-transition: var(--transition-duration) linear;
+    --color-transition: var(--transition-duration) linear;
+
+    /* Light theme setting */
+    --light-bg-color: var(--theme-color--white);
+    --light-body-text-color: var(--theme-color--black);
+    --light-link-color: var(--theme-color--charcoal);
+
+    /* Dark theme setting */
+    --dark-bg-color: var(--theme-color--black);
+    --dark-body-text-color: var(--theme-color--white);
+    --dark-link-color: var(--theme-color--white);
+  }
 
   // CSS Reset
   *, *::before, *::after {
@@ -93,10 +169,9 @@ const GlobalStyle = createGlobalStyle`
   }
   
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-stack-body);
     font-weight: 400;
-    font-size: 1.8rem;
-    color: #333;
+    font-size: var(--font-size-body);
   }
 
   h1, .h1,
@@ -105,74 +180,69 @@ const GlobalStyle = createGlobalStyle`
   h4, .h4,
   h5, .h5,
   h6, .h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-stack-heading);
     font-weight: 700;
     margin-top: 0;
   }
   
   h1, .h1 {
-    font-size: 4.0rem;
-    line-height: 1.15em;
+    font-size: var(--h1-sm);
+    line-height: var(--line-height-h1);
 
-    @media (min-width: 992px) {
-      font-size: 7.5rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h1-lg);
     }
   }
 
   h2, .h2 {
-    font-size: 2.6rem;
-    line-height: 1.15em;
+    font-size: var(--h2-sm);
+    line-height: var(--line-height-h2);
 
-    @media (min-width: 992px) {
-      font-size: 5.7rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h2-lg);
     }
   }
 
   h3, .h3 {
-    font-size: 2.4rem;
-    line-height: 1.3em;
+    font-size: var(--h3-sm);
+    line-height: var(--line-height-h3);
 
-    @media (min-width: 992px) {
-      font-size: 4.2rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h3-lg);
     }
   }
 
   h4, .h4 {
-    font-size: 2.2rem;
-    line-height: 1.3em;
+    font-size: var(--h4-sm);
+    line-height: var(--line-height-h4);
 
-    @media (min-width: 992px) {
-      font-size: 3.21rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h4-lg);
     }
   }
 
   h5, .h5 {
-    font-size: 1.8rem;
-    line-height: 1.3em;
+    font-size: var(--h5-sm);
+    line-height: var(--line-height-h5);
 
-    @media (min-width: 992px) {
-      font-size: 2.6rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h5-lg);
     }
   }
 
   h6, .h6 {
-    font-size: 1.6rem;
-    line-height: 1.4em;
+    font-size: var(--h6-sm);
+    line-height: var(--line-height-h6);
 
-    @media (min-width: 992px) {
-      font-size: 1.8rem;
+    @media (min-width: var(--md)) {
+      font-size: var(--h6-lg);
     }
   }
 
-  /* --xs: 480px;
-  --sm: 768px;
-  --md: 992px;
-  --lg: 1200px;
-  --xlg: 1440px; */
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    transition: background 0.2s linear, color 0.2s linear;
+    transition: background var(--bg-transition), color var(--color-transition);
   }
 
 `;
