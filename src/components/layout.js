@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import Navigation from "./navigation"
 import styled from "styled-components"
 import breakpoints from "./GlobalStyles/breakpoints"
 
@@ -19,7 +18,6 @@ export default ({ children }) => {
 
   return (
     <Contianer>
-      <Navigation />
       {children}
     </Contianer >
   )

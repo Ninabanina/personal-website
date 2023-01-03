@@ -26,6 +26,7 @@ const Toggler = styled.button`
   display: inline-block;
   background: ${({ theme }) => theme.colors.togglerBg};
   transition: all var(--transition-duration) ease-in-out;
+  align-self: center;
 
   &::before {
     top: 4px;
@@ -59,6 +60,11 @@ const Toggler = styled.button`
     &::after {
       background: ${({ theme }) => theme.colors.toggleHover};
     }
+  }
+
+  @media(max-width: 320px) {
+    align-self: end;
+    margin-right: 0.8rem;
   }
 `
 

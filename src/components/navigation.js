@@ -5,7 +5,7 @@ import breakpoints from "./GlobalStyles/breakpoints";
 
 const Navigation = () => {
   return (
-    <nav>
+    <NavContianer>
       <NavLists>
         <NavItem>
           <Link to='/' activeClassName="active">Home</Link>
@@ -17,9 +17,13 @@ const Navigation = () => {
           <Link to='/blog/' activeClassName="active">Blog</Link>
         </NavItem>
       </NavLists>
-    </nav>
+    </NavContianer>
   );
 };
+
+const NavContianer = styled.nav`
+  width: calc(100% - 48px);
+`
 
 const NavLists = styled.ul`
   display: flex;
