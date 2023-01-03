@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
-import Header from '../components/header';
+import HomeBanner from '../components/homeBanner';
 import GlobalStyle from '../components/GlobalStyles/GlobalStyles';
 
 import ThemeWrapper from '../components/themeWrapper';
@@ -15,7 +15,7 @@ const HomePage = ({ data }) => {
       <Layout>
         <GlobalStyle />
         <div>
-          <Header headerText='Nina Frontend Web UI Programming Usability&More' />
+          <HomeBanner name='Nina' descriptionText='Frontend Web&nbsp;UI Programming Usability&#38;More' />
           <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>

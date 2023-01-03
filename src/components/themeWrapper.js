@@ -52,19 +52,19 @@ const NavWrapper = styled.div`
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
 
-  @media(max-width: 320px) {
+  @media ${breakpoints.device.maxXXS} {
     flex-direction: column-reverse;
     align-items: flex-end;
   }
-  
-  @media ${breakpoints.device.maxXS} {
-    padding: 1.5rem;
-  }
 
   @media ${breakpoints.device.maxMD} {
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  
+  @media ${breakpoints.device.maxXS} {
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 `
 export default ThemeWrapper;

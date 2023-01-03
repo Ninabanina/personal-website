@@ -2,6 +2,7 @@ export const light = {
   background: 'var(--light-bg-color)',
   text: 'var(--light-body-text-color)',
   link: 'var(--light-link-color)',
+  bannerTextColor: 'var(--theme-color--charcoal)',
 
   // Theme Toggler Style
   togglerBg: 'var(--theme-color--grey)',
@@ -20,6 +21,7 @@ export const dark = {
   background: 'var(--dark-bg-color)',
   text: 'var(--dark-body-text-color)',
   link: 'var(--dark-link-color)',
+  bannerTextColor: '#dce0e3',
 
   // Theme Toggler Style
   togglerBg: '#dce0e3',

@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
 
     /* Colors */
     --theme-color--purple: #C3AFC9;
+    --theme-color--dark-purple: #816289;
+    
     --theme-color--rose: #F8DBDB;
     --theme-color--blue: #B3D9EE;
     --theme-color--wheat: #FAF0D7;

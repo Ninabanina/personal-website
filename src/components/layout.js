@@ -16,17 +16,17 @@ const Contianer = styled.main`
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 4rem;
-
-
-  @media ${breakpoints.device.maxXS} {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-  }
+  padding-left: 4rem;
+  padding-right: 4rem;
 
   @media ${breakpoints.device.maxMD} {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+
+  @media ${breakpoints.device.maxXS} {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 `
 
