@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
@@ -7,7 +7,7 @@ import GlobalStyle from '../components/GlobalStyles/GlobalStyles';
 
 import ThemeWrapper from '../components/themeWrapper';
 
-export default ({ data }) => {
+const HomePage = ({ data }) => {
 
   return (
     <>
@@ -55,3 +55,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default HomePage;

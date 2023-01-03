@@ -1,20 +1,8 @@
 import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
 import styled from "styled-components"
 import breakpoints from "./GlobalStyles/breakpoints"
 
-export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-          query {
-            site {
-              siteMetadata {
-                title
-              }
-            }
-          }
-        `
-  )
+const Layout = ({ children }) => {
 
   return (
     <Contianer>
@@ -41,4 +29,6 @@ const Contianer = styled.main`
     padding-left: 3rem;
   }
 `
+
+export default Layout;
 

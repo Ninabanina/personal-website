@@ -4,8 +4,9 @@ const size = {
   md: '992px',
   lg: '1200px',
   xlg: '1440px'
- }
- const device = {
+}
+
+const device = {
   maxXS: `(max-width: ${size.xs})`,
   maxSM: `(max-width: ${size.sm})`,
   maxMD: `(max-width: ${size.md})`,
@@ -17,6 +18,11 @@ const size = {
   minMD: `(min-width: ${size.md})`,
   minLG: `(min-width: ${size.lg})`,
   minXLG: `(min-width: ${size.xlg})`,
- }
+}
 
- export default {size, device}
+const breakpoints = {
+  size,
+  device
+}
+
+export default breakpoints;
