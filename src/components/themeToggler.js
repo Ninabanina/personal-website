@@ -25,7 +25,8 @@ const Toggler = styled.button`
   border-radius: 14px;
   display: inline-block;
   background: ${({ theme }) => theme.colors.togglerBg};
-  transition: all 0.2s ease-in-out;
+  transition: all var(--transition-duration) ease-in-out;
+  align-self: center;
 
   &::before {
     top: 4px;
@@ -37,7 +38,7 @@ const Toggler = styled.button`
     position: absolute;
     border-radius: 12px;
     background: ${({ theme }) => theme.colors.togglerItemFg};
-    transition: all 0.2s ease-in-out;
+    transition: all var(--transition-duration) ease-in-out;
   }
 
   &::after {
@@ -59,6 +60,11 @@ const Toggler = styled.button`
     &::after {
       background: ${({ theme }) => theme.colors.toggleHover};
     }
+  }
+
+  @media(max-width: 320px) {
+    align-self: end;
+    margin-right: 0.8rem;
   }
 `
 
