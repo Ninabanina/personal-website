@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components"
-import breakpoints from "./GlobalStyles/breakpoints"
 
 const HomeBanner = ({ name, descriptionText }) => {
   return (

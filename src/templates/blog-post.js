@@ -12,6 +12,7 @@ const BlogPost = ({ data }) => {
         <GlobalStyle />
         <div>
           <h1>{post.frontmatter.title}</h1>
+          <img src={post.frontmatter.imageURL} alt={post.frontmatter.imageAlt} />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </Layout>
@@ -24,7 +25,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
+        title,
+        imageURL,
+        imageAlt
       }
     }
   }
