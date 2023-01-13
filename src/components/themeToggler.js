@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from "./GlobalStyles/breakpoints";
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
   const areaLabel = theme === 'light' ? 'Activate dark mode' : 'Activate light mode';
@@ -62,7 +63,7 @@ const Toggler = styled.button`
     }
   }
 
-  @media(max-width: 320px) {
+  @media ${breakpoints.device.maxXXS} {
     align-self: end;
     margin-right: 0.8rem;
   }

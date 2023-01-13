@@ -54,7 +54,7 @@ const NavWrapper = styled.div`
   margin-left: auto;
   padding: 4rem;
 
-  @media(max-width: 320px) {
+  @media ${breakpoints.device.maxXXS} {
     flex-direction: column-reverse;
     align-items: flex-end;
   }
