@@ -22,7 +22,7 @@ const Navigation = () => {
 };
 
 const NavContianer = styled.nav`
-  width: calc(100% - 48px);
+  width: calc(100% - var(--toggler-width));
 `
 
 const NavLists = styled.ul`

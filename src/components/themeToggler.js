@@ -16,7 +16,7 @@ const ThemeToggler = ({ theme, toggleTheme }) => {
 const Toggler = styled.button`
   margin: 0;
   padding: 0;
-  width: 48px;
+  width: var(--toggler-width);
   height: 28px;
   border: none;
   /* outline: none; */

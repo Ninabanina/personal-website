@@ -85,6 +85,9 @@ const GlobalStyle = createGlobalStyle`
     --dark-bg-color: var(--theme-color--gray-700);
     --dark-body-text-color: var(--theme-color--gray-100);
     --dark-link-color: var(--theme-color--gray-100);
+
+    /* Component figs */
+    --toggler-width: 48px;
   }
 
   // CSS Reset
@@ -229,7 +232,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     transition: background var(--bg-transition), color var(--color-transition);
   }
-
 `;
 
 export default GlobalStyle;
