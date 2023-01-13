@@ -32,21 +32,27 @@ const GlobalStyle = createGlobalStyle`
     /* Typography sizing */
     --h1-sm: 4.0rem;
     --h1-lg: 7.5rem;
+    --h1-fluid-rate: 5vw + 2rem;
 
     --h2-sm: 2.6rem;
     --h2-lg: 5.7rem;
+    --h2-fluid-rate: 4vw + 1rem;
 
     --h3-sm: 2.4rem;
     --h3-lg: 4.2rem;
+    --h3-fluid-rate: 2.5vw + 1.4rem;
 
     --h4-sm: 2.2rem;
-    --h4-lg: 3.21rem;
+    --h4-lg: 3.2rem;
+    --h4-fluid-rate: 2vw + 1rem;
 
     --h5-sm: 1.8rem;
     --h5-lg: 2.6rem;
+    --h5-fluid-rate: 1.5vw + 1rem;
 
     --h6-sm: 1.6rem;
     --h6-lg: 1.8rem;
+    --h6-fluid-rate: 1vw + 1rem;
 
     --font-size-body:1.8rem;
 
@@ -189,57 +195,33 @@ const GlobalStyle = createGlobalStyle`
   }
   
   h1, .h1 {
-    font-size: var(--h1-sm);
+    font-size: clamp(var(--h1-sm), var(--h1-fluid-rate), var(--h1-lg));
     line-height: var(--line-height-h1);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h1-lg);
-    }
   }
 
   h2, .h2 {
-    font-size: var(--h2-sm);
+    font-size: clamp(var(--h2-sm), var(--h2-fluid-rate), var(--h2-lg));
     line-height: var(--line-height-h2);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h2-lg);
-    }
   }
 
   h3, .h3 {
-    font-size: var(--h3-sm);
+    font-size: clamp(var(--h3-sm), var(--h3-fluid-rate), var(--h3-lg));
     line-height: var(--line-height-h3);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h3-lg);
-    }
   }
 
   h4, .h4 {
-    font-size: var(--h4-sm);
+    font-size: clamp(var(--h4-sm), var(--h4-fluid-rate), var(--h4-lg));
     line-height: var(--line-height-h4);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h4-lg);
-    }
   }
 
   h5, .h5 {
-    font-size: var(--h5-sm);
+    font-size: clamp(var(--h5-sm), var(--h5-fluid-rate), var(--h5-lg));
     line-height: var(--line-height-h5);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h5-lg);
-    }
   }
 
   h6, .h6 {
-    font-size: var(--h6-sm);
+    font-size: clamp(var(--h6-sm), var(--h6-fluid-rate), var(--h6-lg));
     line-height: var(--line-height-h6);
-
-    @media (min-width: var(--md)) {
-      font-size: var(--h6-lg);
-    }
   }
 
   body {
