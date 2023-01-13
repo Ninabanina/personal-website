@@ -4,21 +4,24 @@ const GlobalStyle = createGlobalStyle`
   :root {
 
     /* Colors */
-    --theme-color--purple: #C3AFC9;
-    --theme-color--rose: #F8DBDB;
-    --theme-color--blue: #B3D9EE;
-    --theme-color--wheat: #FAF0D7;
-    --theme-color--peach: #FFD9C0;
+    --theme-color--grape-100: #C3AFC9;
+    
+    --theme-color--pink-100: #F8DBDB;
 
-    --theme-color--charcoal: #454657;
-    --theme-color--black: #121419;
-    --theme-color--white: #F6F6F6;
+    --theme-color--blue-100: #B3D9EE;
 
-    --theme-color--light-grey-100: #fcfefe;
-    --theme-color--light-grey-200: #D9D9D9;
-    --theme-color--grey: #5B5E62;
-    --theme-color--dark-grey-100: #656565;
-    --theme-color--dark-grey-200: #2d2f31;
+    --theme-color--yellow-100: #FAF0D7;
+
+    --theme-color--orange-100: #FFD9C0;
+
+    --theme-color--gray-000: #FCFEFE;
+    --theme-color--gray-100: #F6F6F6;
+    --theme-color--gray-200: #D9D9D9;
+    --theme-color--gray-300: #5B5E62;
+    --theme-color--gray-400: #656565;
+    --theme-color--gray-500: #454657;
+    --theme-color--gray-600: #2D2F31;
+    --theme-color--gray-700: #121419;
 
     /* Font families and stacks */
     --font-body: Poppins;
@@ -68,14 +71,14 @@ const GlobalStyle = createGlobalStyle`
     --color-transition: var(--transition-duration) linear;
 
     /* Light theme setting */
-    --light-bg-color: var(--theme-color--white);
-    --light-body-text-color: var(--theme-color--black);
-    --light-link-color: var(--theme-color--charcoal);
+    --light-bg-color: var(--theme-color--gray-100);
+    --light-body-text-color: var(--theme-color--gray-700);
+    --light-link-color: var(--theme-color--gray-500);
 
     /* Dark theme setting */
-    --dark-bg-color: var(--theme-color--black);
-    --dark-body-text-color: var(--theme-color--white);
-    --dark-link-color: var(--theme-color--white);
+    --dark-bg-color: var(--theme-color--gray-700);
+    --dark-body-text-color: var(--theme-color--gray-100);
+    --dark-link-color: var(--theme-color--gray-100);
   }
 
   // CSS Reset

@@ -49,8 +49,8 @@ const NavItem = styled.li`
     font-weight: 400;
 
     background-image: linear-gradient(
-		var(--theme-color--purple) 100%,
-		var(--theme-color--purple) 100%
+		var(--theme-color--grape-100) 100%,
+		var(--theme-color--grape-100) 100%
 	);
     background-repeat: no-repeat;
     background-size: 100% 0;

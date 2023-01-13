@@ -4,7 +4,7 @@ export const light = {
   link: 'var(--light-link-color)',
 
   // Theme Toggler Style
-  togglerBg: 'var(--theme-color--grey)',
+  togglerBg: 'var(--theme-color--gray-300)',
   togglerLeftSpace: '24px',
   togglerTopSpace: '14px',
   togglerRightSpace: '2px',
@@ -31,5 +31,5 @@ export const dark = {
   togglerBorderRadius: '16px',
   togglerItemBg: '#dce0e3',
   togglerItemFg: '#404346',
-  toggleHover: 'var(--theme-color--light-grey-100)',
+  toggleHover: 'var(--theme-color--gray-000)',
 }
