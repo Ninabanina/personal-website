@@ -76,7 +76,7 @@ const Image = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: var(--theme-color--rose);
+  background-color: var(--theme-color--pink-100);
   color: var(--light-body-text-color);
   padding: 7rem;
 

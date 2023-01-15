@@ -4,19 +4,12 @@ const GlobalStyle = createGlobalStyle`
   :root {
 
     /* Colors */
-    /* --theme-color--purple: #C3AFC9;
-    --theme-color--dark-purple: #816289;
-    
-    --theme-color--rose: #F8DBDB;
-    --theme-color--blue: #B3D9EE;
-    --theme-color--wheat: #FAF0D7;
-    --theme-color--peach: #FFD9C0; */
-
     --theme-color--grape-100: #C3AFC9;
+    --theme-color--grape-200: #816289;
     
     --theme-color--pink-100: #F8DBDB;
 
-    --theme-color--blue-100: #B3D9EE;
+    --theme-color--blue-100-100: #B3D9EE;
 
     --theme-color--yellow-100: #FAF0D7;
 

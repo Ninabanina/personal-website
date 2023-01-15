@@ -18,7 +18,7 @@ const BannerWrapper = styled.div`
 
 const Name = styled.span`
   display: block;
-  color: var(--theme-color--dark-purple);
+  color: var(--theme-color--grape-200);
 `
 
 const Bannertext = styled.h1`
