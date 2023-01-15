@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import breakpoints from "./GlobalStyles/breakpoints"
+import breakpoints from "./GlobalStyles/breakpoints";
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
   const areaLabel = theme === 'light' ? 'Activate dark mode' : 'Activate light mode';
@@ -17,7 +17,7 @@ const ThemeToggler = ({ theme, toggleTheme }) => {
 const Toggler = styled.button`
   margin: 0;
   padding: 0;
-  width: 48px;
+  width: var(--toggler-width);
   height: 28px;
   border: none;
   /* outline: none; */
