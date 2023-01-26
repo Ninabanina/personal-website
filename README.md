@@ -2,7 +2,7 @@
   Personal Website Project
 </h1>
 
-This is the personal website project using the Gatsby starter package. Practice purpose only.
+This is the awesome personal website project using the Gatsby starter package. Practice purpose only.
 
 ## 🚀 Quick start
 
