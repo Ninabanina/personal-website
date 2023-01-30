@@ -16,13 +16,6 @@ const HomePage = ({ data }) => {
         <GlobalStyle />
         <div>
           <HomeBanner name='Nina' descriptionText='Frontend Web&nbsp;UI Programming Usability&#38;More' />
-          {/* <ul>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <li key={node.id}>
-                <Cards linkURL={node.fields.slug} image={node.frontmatter.imageURL} imageAlt={node.frontmatter.imageAlt} title={node.frontmatter.title} date={node.frontmatter.date} summary={node.excerpt}/>
-              </li>
-            ))}
-          </ul> */}
           <Cards data={data} />
         </div>
       </Layout>
@@ -33,15 +26,13 @@ const HomePage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(sort: {fields: id, order: DESC}) {
       edges {
         node {
           id
           frontmatter {
             title
-            date(formatString: "DD MMM, YYYY")
-            imageURL
-            imageAlt
+            date(formatString: "DD MMMM, YYYY")
           }
           fields {
             slug
@@ -49,7 +40,6 @@ export const query = graphql`
           excerpt
         }
       }
-      totalCount
     }
   }
 `;
