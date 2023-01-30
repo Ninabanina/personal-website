@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from "./GlobalStyles/breakpoints";
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
   const areaLabel = theme === 'light' ? 'Activate dark mode' : 'Activate light mode';
@@ -16,7 +17,7 @@ const ThemeToggler = ({ theme, toggleTheme }) => {
 const Toggler = styled.button`
   margin: 0;
   padding: 0;
-  width: 48px;
+  width: var(--toggler-width);
   height: 28px;
   border: none;
   /* outline: none; */
@@ -25,7 +26,8 @@ const Toggler = styled.button`
   border-radius: 14px;
   display: inline-block;
   background: ${({ theme }) => theme.colors.togglerBg};
-  transition: all 0.2s ease-in-out;
+  transition: all var(--transition-duration) ease-in-out;
+  align-self: center;
 
   &::before {
     top: 4px;
@@ -37,7 +39,7 @@ const Toggler = styled.button`
     position: absolute;
     border-radius: 12px;
     background: ${({ theme }) => theme.colors.togglerItemFg};
-    transition: all 0.2s ease-in-out;
+    transition: all var(--transition-duration) ease-in-out;
   }
 
   &::after {
@@ -59,6 +61,11 @@ const Toggler = styled.button`
     &::after {
       background: ${({ theme }) => theme.colors.toggleHover};
     }
+  }
+
+  @media ${breakpoints.device.maxXXS} {
+    align-self: end;
+    margin-right: 0.8rem;
   }
 `
 

@@ -1,10 +1,11 @@
 export const light = {
-  background: '#ffffff',
-  text: '#131419',
-  link: '#444658',
+  background: 'var(--light-bg-color)',
+  text: 'var(--light-body-text-color)',
+  link: 'var(--light-link-color)',
+  bannerTextColor: 'var(--theme-color--charcoal)',
 
   // Theme Toggler Style
-  togglerBg: '#5B5E62',
+  togglerBg: 'var(--theme-color--gray-300)',
   togglerLeftSpace: '24px',
   togglerTopSpace: '14px',
   togglerRightSpace: '2px',
@@ -17,9 +18,10 @@ export const light = {
 }
 
 export const dark = {
-  background: '#131419',
-  text: '#ffffff',
-  link: '#ffffff',
+  background: 'var(--dark-bg-color)',
+  text: 'var(--dark-body-text-color)',
+  link: 'var(--dark-link-color)',
+  bannerTextColor: '#dce0e3',
 
   // Theme Toggler Style
   togglerBg: '#dce0e3',
@@ -31,5 +33,5 @@ export const dark = {
   togglerBorderRadius: '16px',
   togglerItemBg: '#dce0e3',
   togglerItemFg: '#404346',
-  toggleHover: '#fcfefe',
+  toggleHover: 'var(--theme-color--gray-000)',
 }

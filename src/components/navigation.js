@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import breakpoints from "./GlobalStyles/breakpoints";
 
 const Navigation = () => {
   return (
-    <nav>
+    <NavContianer>
       <NavLists>
         <NavItem>
           <Link to='/' activeClassName="active">Home</Link>
@@ -16,9 +17,13 @@ const Navigation = () => {
           <Link to='/blog/' activeClassName="active">Blog</Link>
         </NavItem>
       </NavLists>
-    </nav>
+    </NavContianer>
   );
 };
+
+const NavContianer = styled.nav`
+  width: calc(100% - var(--toggler-width));
+`
 
 const NavLists = styled.ul`
   display: flex;
@@ -37,15 +42,15 @@ const NavItem = styled.li`
   border-right: 2px solid #444658;
 
   a {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-stack-heading);
     text-decoration: none;
     color: ${({ theme }) => theme.colors.link};
     text-transform: uppercase;
     font-weight: 400;
 
     background-image: linear-gradient(
-		#c3aeca 100%,
-		#c3aeca 100%
+		var(--theme-color--grape-100) 100%,
+		var(--theme-color--grape-100) 100%
 	);
     background-repeat: no-repeat;
     background-size: 100% 0;
@@ -64,13 +69,13 @@ const NavItem = styled.li`
     border-right: none;
   }
 
-  @media (min-width: 480px) {
+  @media ${breakpoints.device.minXS} {
     font-size: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  @media (min-width: 768) {
+  @media ${breakpoints.device.minSM} {
     font-size: 2.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
