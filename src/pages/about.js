@@ -1,8 +1,10 @@
 import React from "react"
+
 import Layout from "../components/layout"
 import Header from "../components/homeBanner"
 import GlobalStyle from "../components/GlobalStyles/GlobalStyles"
 import ThemeWrapper from "../components/themeWrapper"
+import Text from "../components/text"
 
 const AboutPage = () => (
   <ThemeWrapper>
@@ -10,7 +12,7 @@ const AboutPage = () => (
       <GlobalStyle />
       <div>
         <Header headerText="About me" />
-        <p>Such wow. Very React.</p>
+        <Text size="large">Such wow. Very React.</Text>
       </div>
     </Layout>
   </ThemeWrapper>

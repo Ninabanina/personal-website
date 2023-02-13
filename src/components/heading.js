@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 
 const Heading = ({ level, children }) => {
   const Tag = level ? level : "h2"

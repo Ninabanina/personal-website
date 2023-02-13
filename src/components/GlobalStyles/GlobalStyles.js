@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -56,6 +56,16 @@ const GlobalStyle = createGlobalStyle`
     --h6-fluid-rate: 1vw + 1rem;
 
     --font-size-body:1.8rem;
+    --font-fluid-body-rate: 1vw + 1rem;
+
+    --font-size-body-small-mobile: 1.2rem;
+    --font-size-body-small-desktop: 1.4rem;
+
+    --font-size-body-medium-mobile: 1.6rem;
+    --font-size-body-medium-desktop: 1.8rem;
+
+    --font-size-body-large-mobile: 2rem;
+    --font-size-body-large-desktop: 2.4rem;
 
     /* Typography spacing */
     --letter-spacing-body: 0.05rem;
@@ -68,6 +78,10 @@ const GlobalStyle = createGlobalStyle`
     --line-height-h4: 1.3em;
     --line-height-h5: 1.3em;
     --line-height-h6: 1.4em;
+
+    /* Typography weight */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
 
     /* Transition defaults */
     --transition-duration: 0.2s;
@@ -233,6 +247,64 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     transition: background var(--bg-transition), color var(--color-transition);
   }
-`;
 
-export default GlobalStyle;
+  // Size
+  .smallFontSize {
+    font-size: clamp(var(--font-size-body-small-mobile), var(--font-fluid-body-rate), var(--font-size-body-small-desktop));
+  }
+
+  .mediumFontSize {
+    font-size: clamp(var(--font-size-body-medium-mobile), var(--font-fluid-body-rate), var(--font-size-body-medium-desktop));
+  }
+
+  .largeFontSize {
+    font-size: clamp(var(--font-size-body-large-mobile), var(--font-fluid-body-rate), var(--font-size-body-large-desktop));
+  }
+
+
+
+  // Weights
+  .regularFontWeight {
+    font-weight: var(--font-weight-regular);
+  }
+
+  .boldFontWeight {
+    font-weight: var(--font-weight-bold);
+  }
+
+  // Display
+  .inlineTextDisplay {
+    display: inline;
+  }
+
+  .blockTextDisplay {
+    display: block;
+  }
+
+  .inlineBlockTextDisplay {
+    display: inline-block;
+  }
+
+  .flexTextDisplay {
+    display: flex;
+  }
+
+  .inlineFlexTextDisplay {
+    display: inline-flex;
+  }
+
+  // Alignment
+  .leftTextAlign {
+    text-align: left;
+  }
+
+  .ceterTextAlign {
+    text-align: right;
+  }
+
+  .rightTextAlign {
+    text-align: center;
+  }
+`
+
+export default GlobalStyle

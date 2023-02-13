@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Heading from "./heading"
+import Text from "./text"
 
 const Cards = ({ data }) => {
   return (
@@ -22,8 +23,10 @@ const Cards = ({ data }) => {
                 </ImageWrapper>
                 <ContentWrapper>
                   <Heading level="h2">{node.frontmatter.title}</Heading>
-                  <span> {node.frontmatter.date} </span>
-                  <p>{node.excerpt}</p>
+                  <Text component="span" size="small">
+                    {node.frontmatter.date}
+                  </Text>
+                  <Text size="medium">{node.excerpt}</Text>
                 </ContentWrapper>
               </Link>
             </Card>
