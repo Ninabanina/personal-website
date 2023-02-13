@@ -1,15 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import breakpoints from "./GlobalStyles/breakpoints";
+import React from "react"
+import styled from "styled-components"
+import breakpoints from "./GlobalStyles/breakpoints"
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
-  const areaLabel = theme === 'light' ? 'Activate dark mode' : 'Activate light mode';
+  const areaLabel =
+    theme === "light" ? "Activate dark mode" : "Activate light mode"
 
   return (
     <Toggler onClick={toggleTheme} aria-label={areaLabel} title={areaLabel}>
-      <HidenText>
-       Dark and Light Mode toggle.
-      </HidenText>
+      <HidenText>Dark and Light Mode toggle.</HidenText>
     </Toggler>
   )
 }
@@ -31,7 +30,7 @@ const Toggler = styled.button`
 
   &::before {
     top: 4px;
-    left: ${({ theme }) => theme.colors.togglerLeftSpace};;
+    left: ${({ theme }) => theme.colors.togglerLeftSpace};
     content: "";
     width: 20px;
     height: 20px;
@@ -71,14 +70,14 @@ const Toggler = styled.button`
 
 const HidenText = styled.span`
   border: 0 !important;
-	clip-path: inset(50%) !important;
-	height: 1px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-	white-space: nowrap !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 `
 
-export default ThemeToggler;
+export default ThemeToggler

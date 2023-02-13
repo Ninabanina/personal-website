@@ -1,8 +1,8 @@
 ---
-title: 'Set goals with OKRs.'
-date: '2021-09-28'
-imageURL: '../../sample-1.jpg'
-imageAlt: 'sample image'
+title: "Set goals with OKRs."
+date: "2021-09-28"
+imageURL: "../../sample-1.jpg"
+imageAlt: "sample image"
 ---
 
 Whether in life or work, we often set ourselves various goals. For example, I would like to improve my professional skills this year or I want to lose 5 kg in 3 months. But despite our good intentions, why do so many of us struggle to achieve our goals? Perhaps we were wrong in the first step: the goals we've created don't really suit us.

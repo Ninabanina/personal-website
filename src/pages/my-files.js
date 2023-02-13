@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import GlobalStyle from '../components/GlobalStyles/GlobalStyles';
-import ThemeWrapper from '../components/themeWrapper';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import GlobalStyle from "../components/GlobalStyles/GlobalStyles"
+import ThemeWrapper from "../components/themeWrapper"
 
 const MyFiles = ({ data }) => {
   return (
@@ -34,8 +34,8 @@ const MyFiles = ({ data }) => {
         </div>
       </Layout>
     </ThemeWrapper>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query {
@@ -50,6 +50,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default MyFiles;
+export default MyFiles

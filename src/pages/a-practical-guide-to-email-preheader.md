@@ -1,8 +1,8 @@
 ---
-title: 'A Practical Guide to Email Preheader'
-date: '2022-12-12'
-imageURL: '../../sample-3.jpg'
-imageAlt: 'sample image'
+title: "A Practical Guide to Email Preheader"
+date: "2022-12-12"
+imageURL: "../../sample-3.jpg"
+imageAlt: "sample image"
 ---
 
 What is Email Preheader?

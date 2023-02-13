@@ -3,12 +3,7 @@ import styled from "styled-components"
 import breakpoints from "./GlobalStyles/breakpoints"
 
 const Layout = ({ children }) => {
-
-  return (
-    <Contianer>
-      {children}
-    </Contianer >
-  )
+  return <Contianer>{children}</Contianer>
 }
 
 const Contianer = styled.main`
@@ -30,5 +25,4 @@ const Contianer = styled.main`
   }
 `
 
-export default Layout;
-
+export default Layout

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 
 const HomeBanner = ({ name, descriptionText }) => {
@@ -9,8 +9,8 @@ const HomeBanner = ({ name, descriptionText }) => {
         {descriptionText}
       </Bannertext>
     </BannerWrapper>
-  );
-};
+  )
+}
 
 const BannerWrapper = styled.div`
   display: table-caption;
@@ -31,4 +31,4 @@ const Bannertext = styled.h1`
   padding-bottom: 3rem;
 `
 
-export default HomeBanner;
+export default HomeBanner

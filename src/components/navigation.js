@@ -1,25 +1,31 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import breakpoints from "./GlobalStyles/breakpoints";
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import breakpoints from "./GlobalStyles/breakpoints"
 
 const Navigation = () => {
   return (
     <NavContianer>
       <NavLists>
         <NavItem>
-          <Link to='/' activeClassName="active">Home</Link>
+          <Link to="/" activeClassName="active">
+            Home
+          </Link>
         </NavItem>
         <NavItem>
-          <Link to='/about/' activeClassName="active">About</Link>
+          <Link to="/about/" activeClassName="active">
+            About
+          </Link>
         </NavItem>
         <NavItem>
-          <Link to='/blog/' activeClassName="active">Blog</Link>
+          <Link to="/blog/" activeClassName="active">
+            Blog
+          </Link>
         </NavItem>
       </NavLists>
     </NavContianer>
-  );
-};
+  )
+}
 
 const NavContianer = styled.nav`
   width: calc(100% - var(--toggler-width));
@@ -49,9 +55,9 @@ const NavItem = styled.li`
     font-weight: 400;
 
     background-image: linear-gradient(
-		var(--theme-color--grape-100) 100%,
-		var(--theme-color--grape-100) 100%
-	);
+      var(--theme-color--grape-100) 100%,
+      var(--theme-color--grape-100) 100%
+    );
     background-repeat: no-repeat;
     background-size: 100% 0;
     transition: background-size 0.4s cubic-bezier(0.19, 1, 0.5, 1);
@@ -82,4 +88,4 @@ const NavItem = styled.li`
   }
 `
 
-export default Navigation;
+export default Navigation
