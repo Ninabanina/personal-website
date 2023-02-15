@@ -1,8 +1,11 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
-const Cards = ({ data  }) => {
+import Heading from "./heading"
+import Text from "./text"
+
+const Cards = ({ data }) => {
   return (
     <>
       <CardsContainer>
@@ -10,17 +13,20 @@ const Cards = ({ data  }) => {
           <li key={node.id}>
             <Card>
               <Link to={node.fields.slug}>
-                  <ImageWrapper>
-                    <Image>
-                      <img src={node.frontmatter.imageURL} alt={node.frontmatter.imageAl} />
-                    </Image>
-                  </ImageWrapper>
+                <ImageWrapper>
+                  <Image>
+                    <img
+                      src={node.frontmatter.imageURL}
+                      alt={node.frontmatter.imageAl}
+                    />
+                  </Image>
+                </ImageWrapper>
                 <ContentWrapper>
-                  <h2>
-                    { node.frontmatter.title }
-                  </h2>
-                  <span> { node.frontmatter.date } </span>
-                  <p>{ node.excerpt }</p>
+                  <Heading level="h2">{node.frontmatter.title}</Heading>
+                  <Text component="span" size="small">
+                    {node.frontmatter.date}
+                  </Text>
+                  <Text size="medium">{node.excerpt}</Text>
                 </ContentWrapper>
               </Link>
             </Card>
@@ -28,8 +34,8 @@ const Cards = ({ data  }) => {
         ))}
       </CardsContainer>
     </>
-  );
-};
+  )
+}
 
 const CardsContainer = styled.ul`
   padding: 0;
@@ -43,7 +49,7 @@ const Card = styled.div`
     display: flex;
     width: 100%;
     background-color: var(--theme-color--light-grey-200);
-    text-decoration: none
+    text-decoration: none;
   }
 `
 
@@ -59,7 +65,7 @@ const Image = styled.div`
   overflow: hidden;
   position: relative;
   z-index: 0;
-  transition: transform 0.5s cubic-bezier(.4,0,0,1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
 
   img {
     padding: 0;
@@ -87,4 +93,4 @@ const ContentWrapper = styled.div`
   }
 `
 
-export default Cards;
+export default Cards

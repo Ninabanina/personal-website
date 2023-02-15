@@ -1,8 +1,8 @@
 ---
-title: 'Everything about Time'
-date: '2021-12-09'
-imageURL: '../../sample-2.jpg'
-imageAlt: 'sample image'
+title: "Everything about Time"
+date: "2021-12-09"
+imageURL: "../../sample-2.jpg"
+imageAlt: "sample image"
 ---
 
 Do you feel that you are very busy every day, but still don't get much work done? You may not realise it, but you actually wasted a lot of time. The intention of this article is to help you realise the time you waste unintentionally and how to better control your time.
