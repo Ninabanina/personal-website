@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle`
     --h6-sm: 1.6rem;
     --h6-lg: 1.8rem;
     --h6-fluid-rate: 1vw + 1rem;
+
+    --p-sm: 1.6rem;
+    --p-fluid-rate: 1vw + 1rem;
+
+    --span-sm: 1.4rem;
+    --span-fluid-rate: 1vw + 1rem;
 
     --font-size-body:1.8rem;
 
@@ -233,6 +239,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     transition: background var(--bg-transition), color var(--color-transition);
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
